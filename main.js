@@ -4,13 +4,14 @@ let writeNumberElement = document.querySelector(".write-number");
 let attemptsElement = document.querySelector(".number__tried");
 let btnTry = document.querySelector(".form__button");
 
-function getNumberElement() {
-  let getNumberElement = numberElement.value;
-  console.log(getnumberElement);
+function randomNumber() {
+  let randomNumber = Math.ceil(Math.random() * 100);
+  console.log(Math.ceil(Math.random() * 100));
 }
 
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
+// function getRandomNumber(min, max) {
+//   return Math.ceil(Math.random() * 100);
+//   console.log(getRandomNumber);
+// }
 
-btnTry.addEventListener("click", getNumberElement);
+btnTry.addEventListener("click", randomNumber);

@@ -1,14 +1,15 @@
-.main {
+.form {
   display: flex;
   flex-direction: column;
 }
-.container {
-  display: flex;
-  flex-direction: column;
+.type__number {
+  margin-bottom: 30px;
+  width: 30%;
 }
 .form__button {
   background-color: greenyellow;
   margin-bottom: 30px;
+  width: 80px;
 }
 .write-number {
   width: 60%;
