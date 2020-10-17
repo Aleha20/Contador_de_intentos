@@ -15,22 +15,19 @@ function conectRandomNumber(event) {
   let userNumber = inputNumber.value;
   userNumber = parseInt(inputNumber.value);
   if (userNumber < 1 || userNumber > 100) {
-    writeAnswer.innerHTML = 'El número debe estar entre 1 y 100'; // lo imprime en la web
-    console.log('número muy grande o muy pequeño'); //esto lo  imprime por consola
+    writeAnswer.innerHTML = 'El número debe estar entre 1 y 100';
+    console.log('número muy grande o muy pequeño');
   } else if (userNumber > randomNumber) {
-    writeAnswer.innerHTML = 'Demasiado alto'; // lo imprime en la web
-    console.log('pasa por aquí'); //esto lo  imprime por consola
+    writeAnswer.innerHTML = 'Demasiado alto';
+    console.log('pasa por aquí');
   } else if (userNumber < randomNumber) {
-    writeAnswer.innerHTML = 'Demasiado bajo'; // lo imprime en la web
-    console.log('era otro numero'); //esto lo  imprime por consola
+    writeAnswer.innerHTML = 'Demasiado bajo';
+    console.log('era otro numero');
   } else if ((userNumber = randomNumber)) {
-    writeAnswer.innerHTML = 'Has ganado campeona!!'; // lo imprime en la web
-    console.log('entra por aquí'); //esto lo  imprime por consola
+    writeAnswer.innerHTML = 'Has ganado campeona!!';
+    console.log('entra por aquí');
   }
 }
-// tryBtn.addEventListener('click', conectRandomNumber);
-// estos eventos los comento porque solo me valen para probar que mi
-// funcion está trabajando correctamente
 
 let getClickAttemps = 0;
 
@@ -38,9 +35,6 @@ function getAttemps() {
   getClickAttemps += 1;
   counterAttemps.innerHTML = getClickAttemps;
 }
-// tryBtn.addEventListener('click', getAttemps);
-// estos eventos los comento porque solo me valen para probar que mi
-// funcion está trabajando correctamente
 
 function handleClick() {
   conectRandomNumber();

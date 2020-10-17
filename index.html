@@ -10,10 +10,20 @@
     <main class="main">
       <h1 class="title">Adivina el Número</h1>
       <form class="form">
-        <label class="form-label">Introduce aquí tu número:</label>
-        <input class="js-type-number" type="number" name="type-number" />
-
+        <label class="form-label" for="type-number"
+          >Introduce aquí tu número:</label
+        >
         <input
+          class="js-type-number"
+          id="type-number"
+          type="number"
+          name="type-number"
+          placeholder="Introduzca su número"
+        />
+
+        <label for="button"></label>
+        <input
+          id="button"
           class="js-try-btn"
           type="button"
           name="try-button"
