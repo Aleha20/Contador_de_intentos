@@ -14,18 +14,15 @@ console.log(randomNumber);
 function conectRandomNumber(event) {
   let userNumber = inputNumber.value;
   userNumber = parseInt(inputNumber.value);
+  console.log(userNumber);
   if (userNumber < 1 || userNumber > 100) {
     writeAnswer.innerHTML = 'El número debe estar entre 1 y 100';
-    console.log('número muy grande o muy pequeño');
   } else if (userNumber > randomNumber) {
     writeAnswer.innerHTML = 'Demasiado alto';
-    console.log('pasa por aquí');
   } else if (userNumber < randomNumber) {
     writeAnswer.innerHTML = 'Demasiado bajo';
-    console.log('era otro numero');
-  } else if ((userNumber = randomNumber)) {
+  } else if (userNumber === randomNumber) {
     writeAnswer.innerHTML = 'Has ganado campeona!!';
-    console.log('entra por aquí');
   }
 }
 
