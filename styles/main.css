@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.form-label {
+  margin-bottom: 20px;
+}
+.js-type-number {
+  margin-bottom: 20px;
+  height: 30px;
+  background-color: lightgrey;
+}
+
+.js-try-btn {
+  background-color: aquamarine;
+  width: 30%;
+}
+.js-write {
+  border: 2px solid blue;
+  height: 30px;
+}
+.js-counter {
+  border: 2px solid blue;
+  height: 30px;
+}
